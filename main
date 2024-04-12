@@ -1,0 +1,24 @@
+def user_input():
+
+    """Return proper value provided by the user.
+
+
+    :rtype: str
+
+    :return: value provided by the user from ["too small", "too big", "you won"]
+
+    """
+
+    possible_input = ["too small", "too big", "you won"]
+
+    while True:
+
+        user_answer = input().lower()
+
+        if user_answer in possible_input:
+
+            break
+
+        print("Input is not in ['too small', 'too big', 'you won']")
+
+    return user_answer
